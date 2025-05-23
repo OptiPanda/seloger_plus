@@ -14,7 +14,7 @@ if (typeof browser !== "undefined") {
 
 run = (function () {
     'use strict';
-    applyOldDate(getPostId());
+    setTimeout(() => applyOldDate(getPostId()), 500);
 });
 window.addEventListener("DOMContentLoaded", run());
 

@@ -13,7 +13,7 @@ function getDatas() {
         null,
         XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
         null).snapshotItem(0);
-    return eval(scriptElement.innerHTML.replace('window["__UFRN_LIFECYCLE_SERVERREQUEST__"]=', ''))
+    return eval(scriptElement.innerHTML.replace('window["__UFRN_LIFECYCLE_SERVERREQUEST__"]=', ''));
 }
 
 function createDivOldDate(id, dateMiseEnLigne, dateMiseAJour) {
@@ -91,5 +91,5 @@ function monthDiff(d1, d2) {
 }
 
 function spaceDigits(digits) {
-    return (digits + "").replaceAll(/\B(?=(\d{3})+(?!\d))/g, " ")
+    return (digits + "").replaceAll(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
